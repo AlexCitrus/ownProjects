@@ -157,3 +157,49 @@ body {
 .winning-message.show {
   display: flex;
 }
+
+h1 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 55%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  font-family: "Bangers", cursive;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.restartOnScreen {
+  display: flex;
+  position: fixed;
+  top: 65%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  font-family: "Bangers", cursive;
+  flex-direction: column;
+}
+
+.restartOnScreen button {
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  font-family: "Bangers", cursive;
+}
+
+.restartOnScreen button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
