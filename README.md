@@ -38,6 +38,6 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ## Welcome to my Github Page!
 
-This is where I submit all my works in AvionSchool.
+This is where I put all my own projects.
 
 - [Tic Tac Toe](./TicTacToe/index.html)
