@@ -174,7 +174,7 @@ h1 {
   margin-bottom: 100px;
 }
 
-.restartOnScreen {
+/* .restartOnScreen {
   display: flex;
   position: fixed;
   top: 65%;
@@ -202,4 +202,4 @@ h1 {
   background-color: black;
   color: white;
   border-color: white;
-}
+} */
