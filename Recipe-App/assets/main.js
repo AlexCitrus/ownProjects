@@ -17,7 +17,7 @@ const generateHTML = (results) => {
               </div>
               <div class="meal-name">
                 <h3>${results.recipe.label}</h3>
-                <a href="${results.recipe.url}" class="recipe-btn">Get Recipe</a>
+                <a href="${results.recipe.url}" class="recipe-btn" target="_blank">Get Recipe</a>
               </div>
             </div>
                 `;
