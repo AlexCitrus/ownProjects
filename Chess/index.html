@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess by Alex Pasoquin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- <h1>Chess</h1> -->
+    <div class="board" id="board">
+      <!-- first row -->
+
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="0"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="1"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="2"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="3"></p></div>
+
+      <!-- second row -->
+
+      <div class="cell" data-cell><p class="blackPiece" id="4"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="5"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="6"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="7"></p></div>
+      <div class="cell noPiece" data-cell></div>
+
+      <!-- third row -->
+
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="8"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="9"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="10"></p></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell><p class="blackPiece" id="11"></p></div>
+
+      <!-- fourth row -->
+
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+
+      <!-- fifth row -->
+
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell noPiece" data-cell></div>
+      <div class="cell" data-cell></div>
+
+      <!-- sixth row -->
+
+      <div class="cell" data-cell><p class="whitePiece" id="12"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="13"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="14"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="15"></p></div>
+      <div class="cell" data-cell></div>
+
+      <!-- seventh row -->
+
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="16"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="17"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="18"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="19"></p></div>
+
+      <!-- eighth row -->
+
+      <div class="cell" data-cell><p class="whitePiece" id="20"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="21"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="22"></p></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell><p class="whitePiece" id="23"></p></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <!-- <div class="restartOnScreen">
+      <button id="restartButton">Restart</button>
+    </div> -->
+    <div class="container">
+      <div class="black-turn-text">Black's turn</div>
+      <p id="divider">|</p>
+      <div class="white-turn-text">White's turn</div>
+    </div>
+  </body>
+</html>
