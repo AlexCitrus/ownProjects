@@ -41,9 +41,6 @@
             <li class="nav__item">
               <a href="#menu" class="nav__link">Search</a>
             </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
 
             <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
           </ul>
@@ -95,7 +92,7 @@
       <!--========== SERVICES ==========-->
       <section class="services section bd-container" id="services">
         <span class="section-subtitle">Services</span>
-        <h2 class="section-title">Our amazing services</h2>
+        <h2 class="section-title">Powered by Edamam API</h2>
 
         <div class="services__container bd-grid">
           <div class="services__content">
@@ -182,8 +179,8 @@
             </svg>
             <h3 class="services__title">Fool-proof Recipes</h3>
             <p class="services__description">
-              We offer our clients easy and simple recipes, with the best and
-              delicious food in the internet.
+              Easy and simple recipes, with the best and delicious food in the
+              internet.
             </p>
           </div>
 
@@ -374,10 +371,10 @@
                 </clipPath>
               </defs>
             </svg>
-            <h3 class="services__title">Quarantine-friendly</h3>
+            <h3 class="services__title">Nutrition</h3>
             <p class="services__description">
-              We offer our clients easy and simple recipes that could be done in
-              the comfort of your own home.
+              Each recipe is enriched with a full nutritional profile and over
+              80 diet and health labels.
             </p>
           </div>
 
@@ -441,8 +438,7 @@
             </svg>
             <h3 class="services__title">No-Deliveries</h3>
             <p class="services__description">
-              We offer our clients fast-food quality recipes which lessens the
-              need for deliveries.
+              Fast-food quality recipes to lessen the need for deliveries.
             </p>
           </div>
         </div>
@@ -453,53 +449,27 @@
         <span class="section-subtitle">Search</span>
         <h2 class="section-title">Search Your Recipe!</h2>
 
-        <div class="menu__container bd-grid">
+        <form class="menu__search">
+          <input
+            type="text"
+            class="search"
+            placeholder="Enter Ingredient"
+            id="search-input"
+          />
+          <button type="submit" class="search-btn" id="search-btn">
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </form>
+
+        <div class="menu__container bd-grid" id="meal">
           <div class="menu__content">
-            <img src="assets/img/plate1.png" alt="" class="menu__img" />
-            <h3 class="menu__name">Barbecue salad</h3>
-            <span class="menu__detail">Delicious dish</span>
-            <span class="menu__preci">$22.00</span>
+            <img src="assets/img/sinigang.jpg" alt="" class="menu__img" />
+            <h3 class="menu__name">Pork Sinigang</h3>
+            <span class="menu__detail">Calories:</span>
+            <span class="menu__preci">290</span>
             <a href="#" class="button menu__button"
               ><i class="bx bx-cart-alt"></i
             ></a>
-          </div>
-
-          <div class="menu__content">
-            <img src="assets/img/plate2.png" alt="" class="menu__img" />
-            <h3 class="menu__name">Salad with fish</h3>
-            <span class="menu__detail">Delicious dish</span>
-            <span class="menu__preci">$12.00</span>
-            <a href="#" class="button menu__button"
-              ><i class="bx bx-cart-alt"></i
-            ></a>
-          </div>
-
-          <div class="menu__content">
-            <img src="assets/img/plate3.png" alt="" class="menu__img" />
-            <h3 class="menu__name">Spinach salad</h3>
-            <span class="menu__detail">Delicious dish</span>
-            <span class="menu__preci">$9.50</span>
-            <a href="#" class="button menu__button"
-              ><i class="bx bx-cart-alt"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <!--========== CONTACT US ==========-->
-      <section class="contact section bd-container" id="contact">
-        <div class="contact__container bd-grid">
-          <div class="contact__data">
-            <span class="section-subtitle contact__initial">Let's talk</span>
-            <h2 class="section-title contact__initial">Contact us</h2>
-            <p class="contact__description">
-              We would love to hear your feedback! Contact us and we will attend
-              you quickly, with our 24/7 chat service.
-            </p>
-          </div>
-
-          <div class="contact__button">
-            <a href="#contact" class="button">Contact us now</a>
           </div>
         </div>
       </section>

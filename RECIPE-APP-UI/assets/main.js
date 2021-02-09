@@ -126,3 +126,47 @@ sr.reveal(
     interval: 200,
   }
 );
+
+// MAIN JS
+
+const searchForm = document.querySelector(".menu__search");
+const mealList = document.getElementById("meal");
+const container = document.getElementById("menu");
+const searchResultDiv = document.getElementById("meal");
+let searchQuery = "";
+const APP_ID = "94f4353f";
+const API_KEY = "ad2fa088bd506f53f655fa82fecd83a2";
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  searchQuery = e.target.querySelector(".search").value;
+  console.log(searchQuery);
+  fetchAPI();
+});
+
+const generateHTML = (results) => {
+  let generatedHTML = ``;
+  results.map((result) => {
+    generatedHTML += `
+    <div class="menu__content">
+            <img src="${result.recipe.image}" alt="" class="menu__img" />
+            <h3 class="menu__name">${result.recipe.label}</h3>
+            <span class="menu__detail">Calories:</span>
+            <span class="menu__preci">${result.recipe.calories.toFixed(
+              2
+            )}</span>
+            <a href="${result.recipe.url}" class="button menu__button"
+              ><i class="bx bx-cart-alt"></i
+            ></a>
+          </div>
+    `;
+  });
+  searchResultDiv.innerHTML = generatedHTML;
+};
+
+const fetchAPI = async () => {
+  const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${API_KEY}&to=20`;
+  const response = await fetch(baseURL);
+  const data = await response.json();
+  generateHTML(data.hits);
+  console.log(data);
+};
